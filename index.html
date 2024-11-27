@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>sana exempted</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+  <p class="title">MEMES PARA SAU SER, MWA </p>
+  <div class="container">
+    <div id="meme1" class="meme1">
+      <p>Baklang naglalaptop</p>
+    </div>
+    <div id="meme2" class="meme2">
+      <p>tomboy na naka Mio</p>
+    </div>
+    <div id="meme3" class="meme3">
+      <p>Hapi New year ebriwan</p>
+    </div>
+    <div id="meme4" class="meme4">
+      <p>tang inumin mo jepoy dizon</p>
+    </div>
+    <div id="meme5" class="meme5">
+      <p>ika-anim na utos iskeri</p>
+    </div>
+    <div id="meme6" class="meme6">
+      <p>tay ano ulam</p>
+    </div>
+    <div class="meme7">
+      <div class="container2"><p>literal na kalokohan</p><div></div>
+    </div>
+    </div>
+  </div>
+
+  <button id="play" class="button"> play</button> 
+  <button id="stop" class="button"> stop</button>
+  <script>
+  
+    const playButton = document.getElementById('play');
+    const stopButton = document.getElementById('stop');
+
+    const elementsWithAnimations = document.querySelectorAll(
+        '.meme1 p, .meme2 p, .meme3 p, .meme4 p, .meme5 p, .meme6 p, .container2'
+    );
+
+    function playAnimation() {
+        elementsWithAnimations.forEach(element => {
+            element.style.animationPlayState = 'running';
+        });
+        playButton.disabled = true; 
+        stopButton.disabled = false; 
+    }
+
+    function stopAnimation() {
+        elementsWithAnimations.forEach(element => {
+            element.style.animationPlayState = 'paused';
+        });
+        playButton.disabled = false; 
+        stopButton.disabled = true; 
+    }
+
+    playButton.addEventListener('click', playAnimation);
+    stopButton.addEventListener('click', stopAnimation);
+
+    stopAnimation();
+  </script>
+</body>  

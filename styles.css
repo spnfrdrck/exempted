@@ -1,0 +1,339 @@
+.body{
+  background: radial-gradient(circle, #f66b00, #f79500, #f68a21);
+}
+
+.title{
+  font-family: 'Bangers', cursive;
+  font-size: 3rem;
+  position: absolute; 
+  left: 50%;          
+  transform: translateX(-50%); 
+  color: rgb(255, 255, 255);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #aa5d22;
+  display: inline;
+  }
+
+.container {
+  position: relative;
+  width: 50vw;
+  height: 130vh; 
+  border: 2px outset black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10em;
+  flex-direction: column;
+}
+
+
+.container > div {
+  flex: 1; 
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 65vw;
+  height: 130vh; 
+  border: 2px outset black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10em;
+  flex-direction: column;
+}
+
+
+.container > div {
+  flex: 1; 
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container p {
+  margin: 0; 
+  text-align: center; 
+  white-space: nowrap;
+  position: absolute; 
+}
+
+
+.meme1 {
+  background-image: url(img/images.jpg);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  position: relative;
+}
+
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.meme1 p {
+  animation: marqueeRight 3s linear infinite;  
+  font-size: 2em;  
+  white-space: nowrap;
+  animation-timing-function: linear; 
+}
+
+
+.meme2 {
+  background-image: url(img/tomboy.jpg);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  position: relative;
+}
+
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.meme2 p {
+  animation: marqueeLeft 3s linear infinite;  
+  font-size: 2em;  
+  white-space: nowrap;
+  animation-timing-function: linear;
+}
+
+
+.meme3 {
+  background-image: url(img/manny-pacquiao.gif);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  position: relative;
+  background-size: 25%;
+}
+
+@keyframes talbogX {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.meme3 p {
+  animation: talbogX 5s linear infinite;  
+  font-size: 2em;  
+  white-space: nowrap;
+  animation-timing-function: linear; 
+}
+
+
+.meme4 {
+  background-image: url(img/jepoy.jpg);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  position: relative;
+  background-size: 15%;
+  background-position: center;
+}
+
+@keyframes pataas {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.meme4 p {
+  animation: pataas 4s ease-in-out infinite;  
+  font-size: 2em;  
+  white-space: nowrap;
+  animation-timing-function: ease-in-out; 
+}
+
+
+.meme5 {
+  background-image: url(img/utos.jpg);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  position: relative;
+  background-size: 30%;
+}
+
+@keyframes pababa {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.meme5 p {
+  animation: pababa 4s ease-in-out infinite;  
+  font-size: 2em;  
+  white-space: nowrap;
+  animation-timing-function: ease-in-out; 
+}
+
+.meme6 {
+  background-image: url(img/ulam.jpg);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  position: relative; 
+  background-size: 30%;
+  overflow: hidden; 
+}
+
+@keyframes talbogY {
+  0% {
+    transform: translateY(0); 
+  }
+  25% {
+    transform: translateY(-50%); 
+  }
+  50% {
+    transform: translateY(-100%); 
+  }
+  75% {
+    transform: translateY(-50%); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+.meme6 p{
+  text-align: center; 
+  white-space: nowrap; 
+  font-size: 2em;
+  animation: talbogY 1s ease-in-out infinite;
+}
+
+.meme7 {
+  background-image: url(img/kalokohan.jpg);
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1em;
+  position: relative;
+  background-size: 30%;
+}
+.container2 {
+  position: relative;
+  width: 50vw;
+  height: 130vh;
+  border: 2px outset black;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10em;
+  flex-direction: column;
+  animation: bounceMoveHorizontal 4s ease-in-out infinite, changeColor 4s ease-in-out infinite;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container2 p {
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 2em;
+}
+
+@keyframes bounceMoveHorizontal {
+  0% {
+    transform: translateX(-100%);  
+  }
+  25% {
+    transform: translateX(0);  
+  }
+  50% {
+    transform: translateX(20%);  
+  }
+  75% {
+    transform: translateX(0);  
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #941108; 
+  }
+  25% {
+    background-color: #005303; 
+  }
+  50% {
+    background-color: #941108; 
+  }
+  75% {
+    background-color: #005303; 
+  }
+  100% {
+    background-color: #941108; 
+  }
+}
+  .button {
+    width: 150px; 
+    height: 50px; 
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    font-size: 16px; 
+    text-align: center; 
+    line-height: 50px; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+  }
+  
+
+  .button:hover {
+    background-color: rgb(80, 7, 7); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+
+
+
+
+
+
+
